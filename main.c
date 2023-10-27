@@ -21,7 +21,7 @@ int main() {
     };
 
     printf("\n");
-    printf("Parasite Execution (ver 0.0)\n");
+    printf("Parasite-Remover (ver 0.0)\n");
     printf("\n");
     printf("주의\n");
     printf("\n");

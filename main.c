@@ -3,25 +3,24 @@
 
 int main() {
     char input;
-    char temp;
     int result;
     char *program_name[] = {"Ahnlab safe Transaction", "inisafe", "veraport", "nprotect", "Delfino", "keysharp",
                             "ipinside", "anysign", "maigcline4nx", "crossex", "touchsenex"};
-    char *program_exec[] = {"open /Applications/AhnLab/ASTx/Uninstaller.app", //안랩
-                     "open /Applications/CrossWebEx/UnInstallCrossEX.app", //inisafe
-                     "open /Applications/Veraport/Uninstaller.app", //veraport(통합설치프로그램)
-                     "open /Applications/nProtect/nProtect\\ Online\\ Security\\ V1/NOS/nosuninst.app", //nprotect
-                     "open /Applications/Delfino/Uninstaller.app", // Delfino
-                     "open /Applications/KeySharp\\ biz\\ v2.1/UnInstallbiz.app", //keysharp
-                     "open /Applications/IPinside.app", //ipinside
-                     "open /Applications/SoftForum/Uninstaller_AnySign4PC.app", // anysign
-                     "open /Applications/MagicLine4NX/Uninstaller.app", // maigcline4nx
-                     "open /Applications/CrossEx/crossex/UnInstallCrossEXService.app", //crossex
-                     "open /Applications/CrossEx/touchenex/UninstallCrossEx.app"
+    char *program_exec[] = {"open /Applications/AhnLab/ASTx/Uninstaller.app 2>/dev/null", //안랩
+                     "open /Applications/CrossWebEx/UnInstallCrossEX.app 2>/dev/null", //inisafe
+                     "open /Applications/Veraport/Uninstaller.app 2>/dev/null", //veraport(통합설치프로그램)
+                     "open /Applications/nProtect/nProtect\\ Online\\ Security\\ V1/NOS/nosuninst.app 2>/dev/null", //nprotect
+                     "open /Applications/Delfino/Uninstaller.app 2>/dev/null", // Delfino
+                     "open /Applications/KeySharp\\ biz\\ v2.1/UnInstallbiz.app 2>/dev/null", //keysharp
+                     "open /Applications/IPinside.app 2>/dev/null", //ipinside
+                     "open /Applications/SoftForum/Uninstaller_AnySign4PC.app 2>/dev/null", // anysign
+                     "open /Applications/MagicLine4NX/Uninstaller.app 2>/dev/null", // maigcline4nx
+                     "open /Applications/CrossEx/crossex/UnInstallCrossEXService.app 2>/dev/null", //crossex
+                     "open /Applications/CrossEx/touchenex/UninstallCrossEx.app 2>/dev/null"
     };
 
     printf("\n");
-    printf("Parasite-Remover (ver 0.0)\n");
+    printf("인터넷뱅킹 보안 프로그램 통합 삭제툴 (ver 0.0)\n");
     printf("\n");
     printf("주의\n");
     printf("\n");
@@ -41,7 +40,7 @@ int main() {
         if(i == 0)
         {
             printf("Ahnlab Safe Transaction 프로세스 종료중..\n");
-            result = system("killall -9 astxStatus");
+            result = system("killall -9 astxStatus 2>/dev/null");
             printf("이미 종료된 프로세스\n");
         }
         printf("%s 제거중..\n" ,program_name[i]);
